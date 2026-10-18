@@ -58,7 +58,8 @@ public class ReverseInteger {
     // 4. Recursive
     public static int reverseUsingRecursion(int num) {
         return reverseHelper(Math.abs((long) num), 0) * (num < 0 ? -1 : 1);
-        // Time: O(d) && Space: O(d) -> recursion call stack depth equal to digit count
+        // Time: O(d) && Space: O(d)
+        // -> recursion call stack depth equal to digit count
     }
 
     private static int reverseHelper(long num, long reversed) {
